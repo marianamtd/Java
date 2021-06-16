@@ -15,7 +15,8 @@ public class JavaFX extends Application {
     
     @Override
     public void start(Stage arg0) throws Exception {
-        primaryStage.setTittle("Academia dos Devs");
+        Object primaryStage;
+        ((Object) primaryStage).setTittle("Academia dos Devs");
         Button btn = new Button("Clique aqui");
         btn.setOnAction(new EventHandler<ActionEvent>(){
             @Override
@@ -28,7 +29,7 @@ public class JavaFX extends Application {
 
         StackPane root = new StackPane();
         root.getChildren().addAll(btn);
-        primaryStage.setScene(new Scene(root, 300,255));
-        primaryStage.show();
+        ((Stage) primaryStage).setScene(new Scene(root, 300,255));
+        ((Stage) primaryStage).show();
     }
 }
