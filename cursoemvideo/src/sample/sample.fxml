@@ -1,29 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
 
-<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
-   <columnConstraints>
-      <ColumnConstraints />
-   </columnConstraints>
-   <rowConstraints>
-      <RowConstraints />
-   </rowConstraints>
-   <children>
-      <TabPane prefHeight="200.0" prefWidth="200.0">
-        <tabs>
-          <Tab text="Youtube">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-            </content>
-          </Tab>
-          <Tab text="LinkedIn">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-            </content>
-          </Tab>
-        </tabs>
-      </TabPane>
-   </children>
-</GridPane>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <Label alignment="TOP_CENTER" contentDisplay="TOP" prefHeight="68.0" prefWidth="255.0" text="Mensagem" textAlignment="JUSTIFY" textFill="#b509e3" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Bookman Old Style" size="39.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <Glow level="0.62" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="V_RESIZE" />
+         </cursor>
+         <padding>
+            <Insets top="50.0" />
+         </padding>
+      </Label>
+   </top>
+   <center>
+      <Button mnemonicParsing="false" prefHeight="63.0" prefWidth="168.0" text="Clique Aqui" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Bookman Old Style" size="20.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5444444444444444" centerY="0.5238095238095238" focusAngle="1.08" focusDistance="-0.09302325581395343" radius="0.7558139534883721">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9200000166893005" green="0.02759999968111515" blue="0.7117733359336853" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.5487364530563354" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <InnerShadow blurType="TWO_PASS_BOX" height="0.0" radius="15.1275" width="62.51">
+               <color>
+                  <Color red="0.38951998949050903" green="0.13680000603199005" blue="0.7200000286102295" opacity="0.573913037776947" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+   </center>
+</BorderPane>
