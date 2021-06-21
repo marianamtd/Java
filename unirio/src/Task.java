@@ -12,7 +12,7 @@ public class Task {
             System.out.print(s + " ,");
         }
     }
-} */
+}
 
 class Task{
     public static void main(String[] args){
@@ -42,3 +42,35 @@ class Task{
 
     }
 }
+ import java.io.BufferedReader;
+ import java.io.InputStreamReader;
+ import java.io.IOException;
+ public class Task{
+ public static void main(String[] args) throws IOException{
+ BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+ String[] values = reader.readLine().split("\\s+");
+ int a = Integer.parseInt(values[0]);
+ int b = Integer.parseInt(values[1]);
+ System.out.println(a + b);
+ }
+ }
+ import java.util.Scanner;
+public class Task{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();  //input de um num int
+        int b = scanner.nextInt();  //input de um outro int
+        System.out.println(a + b);
+    }
+} */
+
+import java.util.Scanner;
+public class Task{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        System.out.println(b + " " + a);
+    }
+}
+
