@@ -9,5 +9,12 @@ public class PrimitiveType {
 
         int intZero;
         long longZero;
+
+        /* Unary Operators*/
+        int a = 5; //a is 5
+        int b = ++a; // b is 6, a is 6
+        int c = b++; //c is 6, b is 7
+        int d = c--; //d is 6, c is 5
+
     }
 }
