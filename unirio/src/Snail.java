@@ -12,7 +12,6 @@ public class Snail {
         while (up < poste){
             dia++;
             up -= b;
-
             if(up < poste){
                 up += a;
             }
