@@ -12,6 +12,6 @@ public class Ex6 {
         float gasolina_gasta = scanner.nextFloat();
 
         System.out.println("Velocidade:  " + distancia/ tempo);
-        System.out.print("Gasolina: " +);
+
     }
 }
