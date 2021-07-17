@@ -1,3 +1,5 @@
+//verifica a hora de sono (se é ideial ou não)
+
 import java.util.Scanner;
 
 public class Sleep {
