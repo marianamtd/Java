@@ -1,4 +1,4 @@
-import java.util.Scanner;
+/* import java.util.Scanner;
 
 public class GameArmyOfUnits {
     public static void main(String[] args) {
@@ -38,5 +38,20 @@ public class GameArmyOfUnits {
         else {
             System.out.println("legion");
         }
+    }
+} */
+import java.util.Scanner;
+
+public class GameArmyOfUnits {
+    static String checkArmy(int num) {
+        return num < 1 ? "no army"
+                : num < 5 ? "few"
+                : num < 10 ? "several"
+                : "lots";
+    }
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println(checkArmy(scan.nextInt()));
     }
 }
