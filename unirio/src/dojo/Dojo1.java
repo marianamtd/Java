@@ -29,7 +29,9 @@ public class Dojo1 {
         Date data_pc = new Date();  //criar objeto para a data do pc
         SimpleDateFormat formatar = new SimpleDateFormat("y");   //criar outro objeto para fazer a manipulação da data
         String data_atual = formatar.format(data_pc);  //metodo format da classe SimpleDateFormat
-        System.out.println(data_atual);
+        int data = Integer.parseInt(data_atual); // converte a String para Integer
+        System.out.println("Distância: "+ (ano - Math.abs(data)));    // colocar a distância absoluta
+        
 
     }
 }
