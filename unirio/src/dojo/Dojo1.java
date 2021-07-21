@@ -3,22 +3,16 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-
-
 public class Dojo1 {
-
-    /*private String getDateTime() {
-        DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
-        Date date = new Date();
-        return dateFormat.format(date);
-    } */
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        //input do ano
+        //input do ano e qtd de dias
         System.out.println("Insira o ano: ");
         int ano = scanner.nextInt();
+        System.out.println("Insira o dia: ");
+        int qtd_dias = scanner.nextInt();
 
         //verificar se ele é impar
         System.out.println("Paridade: " + (ano % 2 == 0 ? "Par" : "Ímpar"));
