@@ -31,7 +31,7 @@ public class Dojo1 {
         String data_atual = formatar.format(data_pc);  //metodo format da classe SimpleDateFormat
         int data = Integer.parseInt(data_atual); // converte a String para Integer
         System.out.println("Distância: "+ (ano - Math.abs(data)));    // colocar a distância absoluta
-        
+
 
     }
 }
