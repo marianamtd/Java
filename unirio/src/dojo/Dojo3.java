@@ -78,18 +78,21 @@ public class Dojo3 {
         }
         System.out.print("Digite um número: ");
         int n = scanner.nextInt();
-        while (n != media) {
+        int qtd = 0;
+        while (n != media || qtd <= 15) {
 
             if (n < media) {
                 System.out.print("Menor\n");
 
-            }else {
+            }else if (n > media) {
                 System.out.print("Maior\n");
+            } else {
+                System.out.print("Acertou!");
             }
             System.out.print("Digite um número: ");
             n = scanner.nextInt();
+            qtd++;
         }
-        System.out.print("Acertou!");
 
     }
 }
