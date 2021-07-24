@@ -79,7 +79,7 @@ public class Dojo3 {
         System.out.print("Digite um número: ");
         int n = scanner.nextInt();
         int qtd = 0;
-        while (n != media || qtd <= 15) {
+        while (qtd < 15) {
 
             if (n < media) {
                 System.out.print("Menor\n");
@@ -88,6 +88,7 @@ public class Dojo3 {
                 System.out.print("Maior\n");
             } else {
                 System.out.print("Acertou!");
+                break;
             }
             System.out.print("Digite um número: ");
             n = scanner.nextInt();
