@@ -5,19 +5,19 @@ import java.util.Scanner;
 
 public class Dojo1 {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {  //method
         Scanner scanner = new Scanner(System.in);
 
         //input do ano e qtd de dias
         System.out.println("Insira o ano: ");
         int ano = scanner.nextInt();
-        System.out.println("Insira o dia: ");
+        System.out.println("Insira o dia: ");  //statement 
         int qtd_dias = scanner.nextInt();
 
         //verificar se ele é impar
         System.out.println("Paridade: " + (ano % 2 == 0 ? "Par" : "Ímpar"));
         //verificar se é bissexto
-        System.out.println("Bissexto: " + (((ano % 4 == 0) && (ano % 100 != 0) || (ano % 400 == 0)) ? "true" : "false"));
+        System.out.println("Bissexto: " + (((ano % 4 == 0) && (ano % 100 != 0) || (ano % 400 == 0)) ? "true" : "false"));  
 
         //pegar a data atual do pc
         Date data_pc = new Date();  //criar objeto para a data do pc
