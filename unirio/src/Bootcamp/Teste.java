@@ -7,5 +7,5 @@ public class Teste {
 
         Gato gato = new Gato();
     }
-    
+
 }
