@@ -7,27 +7,32 @@ public class CompleteDojo3 {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
 
-        //declaração das var
         float media = 0;
         int soma = 0;
 
 
-        for (int i= 0; i < 5; i++) {
-            int aleatorio = random.nextInt(10);
-            soma += aleatorio;
+        for (int i = 0; i < 5; i++){
+            int aleatoria = random.nextInt(10);
+            soma += aleatoria;
             media = (float) soma / 5;
         }
 
-        //tentativas
-        float n;
-        do {
+         //tentaivas
+        int qtd = 0;
+        while (qtd < 15) {
             System.out.println("Digite um número: ");
-            n = scanner.nextFloat();
+            float n = scanner.nextFloat();
+            if (n < media)
+                System.out.println("Menor");
 
-            if (n == media)
-                System.out.println("Acertou!");
-            else
-                System.out.println("" + ((n < media? "Menor" : "Maior")));
-        }while (n != media);
+            else if (n > media)
+                System.out.println("Maior");
+
+            else {
+                System.out.println("Acertou");
+                break;
+            }
+            qtd++;
+        }
     }
 }
