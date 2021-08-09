@@ -10,6 +10,7 @@ public class Gato {
 
     public Gato(String nome, String cor, Integer idade) {    //aperta alt + insert
         this.nome = nome;
+        System.out.println("oi");
         this.cor = cor;
         this.idade = idade;
     }
@@ -17,7 +18,7 @@ public class Gato {
     //para criar um arquivo, so apertar o pacote ou o scr e apertar as teclas alt + insert
 
 
-    public String getNome() {   //aperta alt + insert
+    /*public String getNome() {   //aperta alt + insert
         return nome;
     }
 
@@ -28,18 +29,18 @@ public class Gato {
     public String getCor() {
         return cor;
     }
-
-    public void setCor(String cor) {
-        this.cor = cor;
-    }
-
-    public Integer getIdade() {
-        return idade;
-    }
-
-    public void setIdade(Integer idade) {
-        this.idade = idade;
-    }
+*/
+//    public void setCor(String cor) {
+//        this.cor = cor;
+//    }
+//
+//    public Integer getIdade() {
+//        return idade;
+//    }
+//
+//    public void setIdade(Integer idade) {
+//        this.idade = idade;
+//    }
 
     @Override
     public String toString() {
