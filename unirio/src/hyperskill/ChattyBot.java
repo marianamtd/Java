@@ -10,8 +10,8 @@ public class ChattyBot {
         "I was created in 2021");
         System.out.println("Please, remind me your name.");
         System.out.println("What a great name you have, "+ scanner.nextLine());
-        /*String name = scanner.nextLine();
-        System.out.printf("What a great name you have, %s", name);*/
+        String name = scanner.nextLine();
+        System.out.printf("What a great name you have, %s", name);
 
 
     }
