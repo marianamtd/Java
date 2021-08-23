@@ -6,46 +6,42 @@ public class Caneta {
     private String cor;
     private boolean tampada;
 
-    
-
-
-
-    /*//metodos
-    public Caneta( String m, String c, float p) {  //metodo construct
-        this.setModelo(m);
-        this.setCor(c);
-        this.setPonta(p);
-        this.tampar();
-
+    public Caneta(String modelo, float ponta, String cor) {  //contruct
+        this.modelo = modelo;
+        this.ponta = ponta;
+        this.cor = cor;
     }
-
-    public void setCor(String c) {
-        this.cor = c;
-    }
-
 
     public String getModelo() {
-        return this.modelo;
+        return modelo;
     }
 
-    public void setModelo(String m) {
-        this.modelo = m;
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
     }
 
     public float getPonta() {
         return ponta;
     }
 
-    public void setPonta(float p) {
-        this.ponta = p;
+    public void setPonta(float ponta) {
+        this.ponta = ponta;
     }
 
-    public void tampar() {
-        this.tampada = true;
+    public String getCor() {
+        return cor;
     }
 
-    public void destampar() {
-        this.tampada = false;
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+
+    public boolean isTampada() {
+        return tampada;
+    }
+
+    public void setTampada(boolean tampada) {
+        this.tampada = tampada;
     }
 
     public void status() {
@@ -55,5 +51,5 @@ public class Caneta {
         System.out.println("Cor: " + this.cor);
         System.out.println("Tampada: " + this.tampada);
         System.out.println();
-    }*/
+    }
 }
