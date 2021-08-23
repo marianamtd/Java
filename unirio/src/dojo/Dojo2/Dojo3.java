@@ -9,10 +9,17 @@ public class Dojo3 {
         pokemon.setTipo("Normal");
         pokemon.setPeso(6.5f);
         pokemon.setAltura(0.3f);
-        pokemon.setFelicidade(85);
-        pokemon.setChanceDeCaptura(99);
+        pokemon.setChanceDeCaptura(20);
+        pokemon.brincar();
+        pokemon.brincar();
+        pokemon.alimentar();
+        pokemon.brincar();
+        pokemon.alimentar();
         pokemon.statusAtual();
-        pokemon.falar();
+        pokemon.evoluir("Pikachu", "Evoluído", 90);
+        pokemon.statusAtual();
+
+
 
     }
 }

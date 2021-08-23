@@ -27,6 +27,7 @@ public class Pokemon {
     //contruct
     public Pokemon() {
         this.setCapturado(false);
+        this.setFelicidade(0);
     }
 
     //metodos personalizados
@@ -50,15 +51,23 @@ public class Pokemon {
 
     }
     public void libertar() {
+        if (this.isCapturado()) {
+            this.setCapturado(false);
+            System.out.println(this.getNome() + " foi libertado");
+        }
+        else {
+            System.out.println("Não há como libertar, pois n foi capturado");
+        }
 
     }
 
     public void brincar() {
+        this.setFelicidade(getFelicidade() + 20);
 
     }
 
     public void alimentar() {
-
+        this.setFelicidade(getFelicidade() + 35);
     }
 
     public void falar() {
@@ -66,8 +75,18 @@ public class Pokemon {
 
     }
 
-    public  void evoluir() {
+    public void evoluir(String nome, String tipo , int captura) {
+        if (this.getFelicidade() > 100) {
+            System.out.println("Pokemon evoluído com sucesso");
+            this.setFelicidade(getFelicidade() - 100);
+            this.setNome(nome);
+            this.setTipo(tipo);
+            this.setChanceDeCaptura(captura);
+        }
+        else {
+            System.out.printf("Sua felicidade é de %d, espere chegar até 100\n", this.getFelicidade());
 
+        }
     }
 
 
