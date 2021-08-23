@@ -1,4 +1,4 @@
-package dojo;
+package Dojo1;
 import java.util.Random;
 import java.util.Scanner;
 
