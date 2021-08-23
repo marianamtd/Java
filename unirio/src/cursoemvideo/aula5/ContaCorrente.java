@@ -8,6 +8,15 @@ public class ContaCorrente {
     private float valorSaldo;
     private boolean statusConta;
 
+    public void statusAtual() {
+        System.out.println("Conta: " + this.getNumConta());
+        System.out.println("Tipo da conta: " + this.getTipoConta());
+        System.out.println("Dono: " + this.getNomeDono());
+        System.out.println("Saldo: " + this.getValorSaldo());
+        System.out.println("Status da conta: " + this.isStatusConta());
+        System.out.println();
+    }
+
     //metodo construtor
     public ContaCorrente() {
         this.valorSaldo = 0;
