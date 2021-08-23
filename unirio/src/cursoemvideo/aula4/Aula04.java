@@ -3,13 +3,13 @@ package cursoemvideo.aula4;
 public class Aula04 {
     public static void main(String[] args) {
         //instanciamento da classe
-        Caneta c1 = new Caneta("MILKLINER", "LARANJA", 0.8f);
+        Caneta c1 = new Caneta("MILKLINER", 0.8f, "LARANJA");
         c1.status();
 
-        Caneta c2 = new Caneta("BISMARK", "LILÁS", 0.4F);
+        Caneta c2 = new Caneta("BISMARK", 0.4F, "LILÁS");
         c2.status();
 
-        Caneta c3 = new Caneta("SHARPIE", "FÚXIA", 1f);
+        Caneta c3 = new Caneta("SHARPIE", 1f, "FÚXIA");
         c3.status();
 
         /*c1.setModelo("BISMARK"); //metodo acessor
