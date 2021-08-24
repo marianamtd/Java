@@ -9,6 +9,6 @@ public interface Controlador {
     public abstract void menosVolume();
     public abstract void ligarMudo();
     public abstract void desligarMudo();
-    public abstract void plat();
+    public abstract void play();
     public abstract void pause();
 }
