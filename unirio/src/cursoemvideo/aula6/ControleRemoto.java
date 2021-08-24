@@ -24,11 +24,6 @@ public class ControleRemoto implements Controlador{
     public boolean isLigado() {
         return ligado;
     }
-
-    public void setLigado(boolean ligado) {
-        this.ligado = ligado;
-    }
-
     public boolean isTocando() {
         return tocando;
     }
@@ -37,7 +32,12 @@ public class ControleRemoto implements Controlador{
         this.tocando = tocando;
     }
 
-    //métodos abstratos
+    public void setLigado(boolean ligado) {
+        this.ligado = ligado;
+    }
+
+
+    //implementar os métodos abstratos
     @Override
     public void ligar() {
         this.setLigado(true);
@@ -50,9 +50,10 @@ public class ControleRemoto implements Controlador{
 
     @Override
     public void abrirMenu() {
+        System.out.println("------Menu------");
         System.out.println("Está ligado? " + this.isLigado());
         System.out.println("Está tocando? " + this.isTocando());
-        System.out.print("Volume: ");
+        System.out.print("Volume: " + this.getVolume() + " ");
         for (int i = 0; i < this.getVolume(); i += 10) {
             System.out.print("|");
         }
@@ -66,35 +67,44 @@ public class ControleRemoto implements Controlador{
 
     @Override
     public void maisVolume() {
-
+        if (this.isLigado()) {
+            this.setVolume(getVolume() + 5);
+        }
     }
 
     @Override
     public void menosVolume() {
-
+        if (this.isLigado()) {
+            this.setVolume(getVolume() - 5);
+        }
     }
 
     @Override
     public void ligarMudo() {
-
+        if (this.isLigado() && this.getVolume() > 0) {
+            this.setVolume(0);
+        }
     }
 
     @Override
     public void desligarMudo() {
-
+        if (this.isLigado() && this.getVolume() == 0) {
+            this.setVolume(50);
+        }
     }
 
     @Override
-    public void plat() {
-
+    public void play() {
+        if (this.isLigado() && !(this.isTocando())) {
+            this.setTocando(true);
+        }
     }
 
     @Override
     public void pause() {
-
+        if (this.isLigado() && this.isTocando()) {
+            this.setTocando(false);
+        }
     }
-
-    //implementar os métodos abstratos
-
 
 }
