@@ -1,21 +1,24 @@
 package cursoemvideo.aula7;
 
+import java.util.Locale;
+
 public class Lutador {
     //atributos
     private String nome, nacionalidade, categoria;
     private float altura, peso;
     private int vitorias, derrotas, empates, idade;
 
-    //metodos
+    //metodos publicos
     public void apresentar() {
         System.out.println("----Apresentação----");
-        System.out.println("Lutador: " + this.getNome());
+        System.out.println("O próximo lutador é o ....");
+        System.out.println("Lutador: " + this.getNome().toUpperCase(Locale.ROOT));
         System.out.println("Origem: " + this.getNacionalidade());
         System.out.println("Idade: " + this.getIdade());
         System.out.println("Altura: " + this.getAltura() + "metros");
         System.out.println("Peso: " + this.getPeso() + "Kg") ;
         System.out.println("Vitórias: " + this.getVitorias());
-        System.out.println("Derrotas" + this.getDerrotas());
+        System.out.println("Derrotas: " + this.getDerrotas());
         System.out.println("Empates: " + this.getEmpates());
         System.out.println();
     }
@@ -29,15 +32,15 @@ public class Lutador {
 
     }
     public void ganharLuta() {
-        setVitorias(getVitorias() + 1);
+        this.setVitorias(this.getVitorias() + 1);
 
     }
     public void perderLuta() {
-        setDerrotas(getDerrotas() + 1);
+        this.setDerrotas(this.getDerrotas() + 1);
 
     }
     public void empatarLuta() {
-        setEmpates(getEmpates() + 1);
+        this.setEmpates(this.getEmpates() + 1);
 
     }
 
@@ -75,23 +78,23 @@ public class Lutador {
         return categoria;
     }
 
-    public void setCategoria() {
+    private void setCategoria() {
         this.categoria = categoria;
 
         if (this.getPeso() < 52.2) {
-            this.categoria = "inválida";
+            this.categoria = "Iinválida";
         }
         else if (this.getPeso() <= 70.3) {
-            this.categoria = "leve";
+            this.categoria = "Leve";
         }
         else if (this.getPeso() <= 83.9) {
-            this.categoria = "médio";
+            this.categoria = "Médio";
         }
         else if (this.getPeso() <= 120.2){
-            this.categoria = "pesado";
+            this.categoria = "Pesado";
         }
         else {
-            this.categoria = "inválido";
+            this.categoria = "Inválido";
         }
     }
 
