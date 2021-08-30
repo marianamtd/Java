@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package cursoemvideo.aula7;
 
 public class aula7 {
@@ -16,12 +15,4 @@ public class aula7 {
         lutador[3].status();
     }
 }
-=======
-package cursoemvideo.aula7;
 
-public class aula7 {
-    public static void main(String[] args) {
-
-    }
-}
->>>>>>> ad20ed45b8cd18347f7ad822751d43a1278ac6b4
