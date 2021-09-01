@@ -12,7 +12,9 @@ public class aula7 {
         lutador[4] = new Lutador("ufocobol", "Brasil", 1.70f,119.3f, 5,4,3,37);
         lutador[5] = new Lutador("Nerdaaed", "EUA", 1.81f, 105.7f, 12,2,4,30);
 
-        lutador[3].status();
+        Luta UFC = new Luta();
+        UFC.marcarLuta(lutador[3], lutador[2]);
+        UFC.luta();
     }
 }
 
