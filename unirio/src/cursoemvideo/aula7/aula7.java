@@ -13,8 +13,11 @@ public class aula7 {
         lutador[5] = new Lutador("Nerdaaed", "EUA", 1.81f, 105.7f, 12,2,4,30);
 
         Luta UFC = new Luta();
-        UFC.marcarLuta(lutador[3], lutador[2]);
+        UFC.marcarLuta(lutador[0], lutador[5]);
         UFC.luta();
+        lutador[0].status();
+        lutador[5].status();
+
     }
 }
 
