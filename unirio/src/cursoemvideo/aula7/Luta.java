@@ -10,43 +10,53 @@ public class Luta {
     private boolean aprovada;
 
     public void marcarLuta(Lutador lutador1, Lutador lutador2) {
-        if (Objects.equals(lutador1.getCategoria(), lutador2.getCategoria())) {
-            if (lutador1 != lutador2) {
-                this.setAprovada(true);
-                lutador1 = desafiado;
-                lutador2 = desafiante;
-            }
+        if (Objects.equals(lutador1.getCategoria(), lutador2.getCategoria()) && lutador1 != lutador2) {
+            this.setAprovada(true);
+            this.desafiado = lutador1;
+            this.desafiante = lutador2;
+            System.out.println("Luta aprovada");
         }
         else {
-            desafiado = null;
-            desafiante = null;
+            this.desafiado = null;
+            this.desafiante = null;
             this.setAprovada(false);
+            System.out.println("Luta não foi aprovada");
         }
     }
     public void luta() {
         Random random = new Random();
 
         if (this.isAprovada()) {
-            desafiado.apresentar();
-            desafiante.apresentar();
-            int aleatorio = random.nextInt(2);
+            //apresentar o lutador
+            System.out.println("DESAFIADO ENTRANDO NO RING");
+            this.desafiado.apresentar();
+            System.out.println("DESAFIANTE ENTRANDO NO RING");
+            this.desafiante.apresentar();
+
+            //declarar a variável aleatória
+            System.out.println();
+            System.out.println("Que rufem os tambores....");
+            int aleatorio = random.nextInt(3);
             System.out.println(aleatorio);
 
-            if (aleatorio == 0) {
-                System.out.println("Empate!");
-                desafiante.getEmpates();
-                desafiado.getEmpates();
+            switch (aleatorio) {
+                case 0:
+                    System.out.println("Empate!");
+                    this.desafiante.empatarLuta();
+                    this.desafiado.empatarLuta();
+                    break;
+                case 1:
+                    System.out.println("O " + this.desafiado.getNome() + " ganhou");   //desafiado ganha
+                    this.desafiado.ganharLuta();
+                    this.desafiante.perderLuta();
+                    break;
+                case 2:
+                    System.out.println("O " + this.desafiante.getNome()+ " ganhou!!");    //desafiante ganha
+                    this.desafiante.ganharLuta();
+                    this.desafiado.perderLuta();
+                    break;
             }
-            else if (aleatorio == 1) {
-                System.out.println("O" + this.getDesafiado() + "ganhou");
-                desafiado.getVitorias();
-                desafiante.getDerrotas();
-            }
-            else {
-                System.out.println("O" + this.getDesafiante() + "ganhou!!");
-                desafiante.getVitorias();
-                desafiado.getDerrotas();
-            }
+            System.out.println();
         }
         else {
             System.out.println("Luta não pode  acontecer");
@@ -54,6 +64,7 @@ public class Luta {
     }
 
     //metodos acessores
+
     public Lutador getDesafiado() {
         return desafiado;
     }
