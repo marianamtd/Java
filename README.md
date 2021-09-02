@@ -25,7 +25,7 @@ UFC dos emojis
   <img src="ufc-emoji.gif">
 </p>
 
-**Sistema de Salão de Beleza**
+**Sistema de Salão de Beleza** 💇💅
 - Pegar as informações dos clientes (nome, telefone, endereço)
 - Marcar o horário com o profissional escolhido pelo cliente
 - Verificar se o profissional pode está disponível para aquele horário
