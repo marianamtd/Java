@@ -16,7 +16,11 @@ Pokemon, e conferindo se tudo funciona conforme esperado.
  
  **UFC de Emojis** 😎 🤓🥊
 Luta dos emojis
+
 -Criação dos lutadores (nome, idade, nacionalidade, peso, altura, vitórias, derrotas, empates)
+- A partir do peso e da altura criar um método para definir a categoria (peso leve, peso médio, peso pesado)
+- Criar métodos de vitória, empate e derrota
+- Criar classe luta para aprovar e marcar uma luta e criar um método para dizer qual lutador ganhou
 <p align="center">
   <img src="ufc-emoji.gif">
 </p>
