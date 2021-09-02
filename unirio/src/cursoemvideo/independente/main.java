@@ -34,17 +34,20 @@ public class main {
 
                     System.out.println("Endereço: ");
                     endereco = scanner.nextLine().toUpperCase(Locale.ROOT);
+
                     System.out.println("Telefone: ");
                     telefone = scanner.nextDouble();
+
                     System.out.println("Informe agora o horário e o nome do profissional:");
                     System.out.println("Horário (sem espaços)");
                     horario = scanner.nextInt();
-                    scanner.nextLine();
+                    scanner.nextLine(); //limpar o buffer do teclado
+                    
                     System.out.println("Nome do profissional [NS para ver a lista dos profissionais]: ");
                     nomeProf = scanner.nextLine().toUpperCase(Locale.ROOT);
 
                     //quando o usuário digitar que NÃO SABE qual profissional tem no salão
-                    if (nomeProf.equals("NS") || nomeProf.equals("ns") ) {
+                    if (nomeProf.equals("NS")) {
                         do {
                             System.out.println("---Lista dos Cabelereiros---");
                             System.out.println("Fábio Moreira");
@@ -56,7 +59,7 @@ public class main {
 
                             System.out.println("Nome do profissional [NS para ver a lista dos profissionais]: ");
                             nomeProf = scanner.nextLine().toUpperCase(Locale.ROOT);
-                        }while(nomeProf.equals("NS") || nomeProf.equals("ns"));
+                        }while(nomeProf.equals("NS"));
 
                     }
                     SalaoDeCabelo corte = new SalaoDeCabelo(nomeCliente, nomeProf, endereco, horario, telefone);
@@ -84,7 +87,7 @@ public class main {
                     nomeProf = scanner.nextLine().toUpperCase(Locale.ROOT);
 
                     //quando o usuário digitar que NÃO SABE qual profissional tem no salão
-                    if (nomeProf.equals("NS") || nomeProf.equals("ns") ) {
+                    if (nomeProf.equals("NS")) {
                         do {
                             System.out.println("---Lista dos Cabelereiros---");
                             System.out.println("Fábio Moreira");
@@ -96,7 +99,7 @@ public class main {
 
                             System.out.println("Nome do profissional [NS para ver a lista dos profissionais]: ");
                             nomeProf = scanner.nextLine().toUpperCase(Locale.ROOT);
-                        }while(nomeProf.equals("NS") || nomeProf.equals("ns"));
+                        }while(nomeProf.equals("NS"));
 
                     SalaoDeCabelo pintar = new SalaoDeCabelo(nomeCliente, nomeProf, endereco, horario, telefone);
                     pintar.pintarCabelo();
@@ -125,7 +128,7 @@ public class main {
                     nomeProf = scanner.nextLine().toUpperCase(Locale.ROOT);
 
                     //quando o usuário digitar que NÃO SABE qual profissional tem no salão
-                    if (nomeProf.equals("NS") || nomeProf.equals("ns") ) {
+                    if (nomeProf.equals("NS")) {
                         do {
                             System.out.println("---Lista de Manicures---");
                             System.out.println("Michele Mendes");
@@ -137,7 +140,7 @@ public class main {
 
                             System.out.println("Nome do profissional [NS para ver a lista dos profissionais]: ");
                             nomeProf = scanner.nextLine().toUpperCase(Locale.ROOT);
-                        }while(nomeProf.equals("NS") || nomeProf.equals("ns"));
+                        }while(nomeProf.equals("NS"));
                     }
                     SalaoDeCabelo unha = new SalaoDeCabelo(nomeCliente, nomeProf,endereco, horario, telefone);
                     unha.pintarUnha();
@@ -166,7 +169,7 @@ public class main {
                     nomeProf = scanner.nextLine().toUpperCase(Locale.ROOT);
 
                     //quando o usuário digitar que NÃO SABE qual profissional tem no salão
-                    if (nomeProf.equals("NS") || nomeProf.equals("ns") ) {
+                    if (nomeProf.equals("NS")) {
                         do {
                             System.out.println("---Lista de Depiladores---");
                             System.out.println("Carla Simone");
@@ -178,14 +181,15 @@ public class main {
 
                             System.out.println("Nome do profissional [NS para ver a lista dos profissionais]: ");
                             nomeProf = scanner.nextLine().toUpperCase(Locale.ROOT);
-                        }while(nomeProf.equals("NS") || nomeProf.equals("ns"));
+                        }while(nomeProf.equals("NS"));
                     }
                     SalaoDeCabelo depilacao = new SalaoDeCabelo(nomeCliente, nomeProf, endereco, horario, telefone);
                     depilacao.marcarDepilacao();
                     depilacao.imprimir();
                     break;
+
                 case 5:
-                    break;
+                    return;
             }
         }while (opcao != 5);
     }
