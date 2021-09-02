@@ -15,7 +15,11 @@ Pokemon, e conferindo se tudo funciona conforme esperado.
 </p>
  
  **UFC de Emojis** 😎 🤓🥊
-
+Luta dos emojis
+-Criação dos lutadores (nome, idade, nacionalidade, peso, altura, vitórias, derrotas, empates)
+<p align="center">
+  <img src="ezgif.com-gif-maker.gif">
+</p>
 
 
 
