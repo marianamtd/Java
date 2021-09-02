@@ -10,7 +10,9 @@ Pokemon, e conferindo se tudo funciona conforme esperado.
 <p align="center">
   <img src="ezgif.com-gif-maker.gif">
 </p>
-
+<p align="center">
+  <img src="ezgif.com-gif-maker.gif">
+</p>
  
  **UFC de Emojis** 😎 🤓🥊
 
