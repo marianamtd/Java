@@ -30,7 +30,7 @@ UFC dos emojis
 - Marcar o horário com o profissional escolhido pelo cliente
 - Verificar se o profissional pode está disponível para aquele horário
 <p align="center">
-  <img src="ezgif.com-gif-maker.gif">
+  <img src="salaodebeleza.gif">
 </p>
 
 
