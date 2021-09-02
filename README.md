@@ -14,8 +14,8 @@ Pokemon, e conferindo se tudo funciona conforme esperado.
   <img src="ezgif.com-gif-maker.gif">
 </p>
  
- **UFC de Emojis** 😎 🤓🥊
-Luta dos emojis
+ **Ultra Emoji Combat** 😎 🤓🥊
+UFC dos emojis
 
 - Criação dos lutadores (nome, idade, nacionalidade, peso, altura, vitórias, derrotas, empates)
 - A partir do peso e da altura criar um método para definir a categoria (peso leve, peso médio, peso pesado)
