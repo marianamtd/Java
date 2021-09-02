@@ -68,14 +68,18 @@ public class main {
                     System.out.println("Informe suas informações:");
                     System.out.println("Nome Completo:");
                     nomeCliente = scanner.nextLine().toUpperCase(Locale.ROOT);
+
                     System.out.println("Endereço: ");
                     endereco = scanner.nextLine().toUpperCase(Locale.ROOT);
+
                     System.out.println("Telefone: ");
                     telefone = scanner.nextDouble();
+
                     System.out.println("Informe agora o horário e o nome do profissional:");
                     System.out.println("Horário (sem espaços)");
                     horario = scanner.nextInt();
-                    scanner.nextLine();
+                    scanner.nextLine(); //limpar o buffer
+
                     System.out.println("Nome do profissional [NS para ver a lista dos profissionais]: ");
                     nomeProf = scanner.nextLine().toUpperCase(Locale.ROOT);
 
@@ -99,9 +103,86 @@ public class main {
                     pintar.imprimir();
                     }
                     break;
+
                 case 3:
+                    System.out.println("Informe suas informações:");
+                    System.out.println("Nome Completo:");
+                    nomeCliente = scanner.nextLine().toUpperCase(Locale.ROOT);
+
+
+                    System.out.println("Endereço: ");
+                    endereco = scanner.nextLine().toUpperCase(Locale.ROOT);
+
+                    System.out.println("Telefone: ");
+                    telefone = scanner.nextDouble();
+
+                    System.out.println("Informe agora o horário e o nome do profissional:");
+                    System.out.println("Horário (sem espaços)");
+                    horario = scanner.nextInt();
+                    scanner.nextLine(); //limpar o buffer do teclado
+
+                    System.out.println("Nome do profissional [NS para ver a lista dos profissionais]: ");
+                    nomeProf = scanner.nextLine().toUpperCase(Locale.ROOT);
+
+                    //quando o usuário digitar que NÃO SABE qual profissional tem no salão
+                    if (nomeProf.equals("NS") || nomeProf.equals("ns") ) {
+                        do {
+                            System.out.println("---Lista de Manicures---");
+                            System.out.println("Michele Mendes");
+                            System.out.println("Pedro Fernandes");
+                            System.out.println("Marcia Abreu");
+                            System.out.println("Luciona Peixoto");
+                            System.out.println("Renata Santos");
+                            System.out.println("NS - Não sei");
+
+                            System.out.println("Nome do profissional [NS para ver a lista dos profissionais]: ");
+                            nomeProf = scanner.nextLine().toUpperCase(Locale.ROOT);
+                        }while(nomeProf.equals("NS") || nomeProf.equals("ns"));
+                    }
+                    SalaoDeCabelo unha = new SalaoDeCabelo(nomeCliente, nomeProf,endereco, horario, telefone);
+                    unha.pintarUnha();
+                    unha.imprimir();
                     break;
+
                 case 4:
+
+                    System.out.println("Informe suas informações:");
+                    System.out.println("Nome Completo:");
+                    nomeCliente = scanner.nextLine().toUpperCase(Locale.ROOT);
+
+
+                    System.out.println("Endereço: ");
+                    endereco = scanner.nextLine().toUpperCase(Locale.ROOT);
+
+                    System.out.println("Telefone: ");
+                    telefone = scanner.nextDouble();
+
+                    System.out.println("Informe agora o horário e o nome do profissional:");
+                    System.out.println("Horário (sem espaços)");
+                    horario = scanner.nextInt();
+                    scanner.nextLine(); //limpar o buffer do teclado
+
+                    System.out.println("Nome do profissional [NS para ver a lista dos profissionais]: ");
+                    nomeProf = scanner.nextLine().toUpperCase(Locale.ROOT);
+
+                    //quando o usuário digitar que NÃO SABE qual profissional tem no salão
+                    if (nomeProf.equals("NS") || nomeProf.equals("ns") ) {
+                        do {
+                            System.out.println("---Lista de Depiladores---");
+                            System.out.println("Carla Simone");
+                            System.out.println("Maiara Pereira");
+                            System.out.println("Victor Roberto");
+                            System.out.println("Eduarda Rodrigues");
+                            System.out.println("Brenda Neves");
+                            System.out.println("NS - Não sei");
+
+                            System.out.println("Nome do profissional [NS para ver a lista dos profissionais]: ");
+                            nomeProf = scanner.nextLine().toUpperCase(Locale.ROOT);
+                        }while(nomeProf.equals("NS") || nomeProf.equals("ns"));
+                    }
+                    SalaoDeCabelo depilacao = new SalaoDeCabelo(nomeCliente, nomeProf, endereco, horario, telefone);
+                    depilacao.marcarDepilacao();
+                    depilacao.imprimir();
                     break;
                 case 5:
                     break;
