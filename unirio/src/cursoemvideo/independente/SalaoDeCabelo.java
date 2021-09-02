@@ -7,6 +7,12 @@ public class SalaoDeCabelo {
     private double disponivel;
 
     //metodos
+    public void marcarDepilacao() {
+
+    }
+    public void pintarUnha() {
+
+    }
     public void pintarCabelo() {
 
     }
