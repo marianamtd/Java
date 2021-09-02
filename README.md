@@ -11,7 +11,7 @@ Pokemon, e conferindo se tudo funciona conforme esperado.
   <img src="ezgif.com-gif-maker.gif">
 </p>
 <p align="center">
-  <img src="ezgif.com-gif-maker.gif">
+  <img src="Dojo 2.pdf - Google Drive e mais 6 páginas - Pessoal — Microsoft​ Edge 02_09_2021 12_47_27.png">
 </p>
  
  **UFC de Emojis** 😎 🤓🥊
