@@ -7,6 +7,11 @@ Projetos que merecem destaques
 
 Criar uma classe Pokémon e implemente os métodos “Capturar”, “Libertar”, “Brincar”, “Alimentar”, “Falar” e “Evoluir”. Feito isso, utilize a main para explorar um pouco, criando alguns objetos da classe
 Pokemon, e conferindo se tudo funciona conforme esperado.
+<p align="center">
+  <img src="ezgif.com-gif-maker.gif">
+</p>
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/67596213/131876947-537abcec-a2a5-47d0-82df-fad449514412.gif)
+
  
  **UFC de Emojis** 😎 🤓🥊
 
