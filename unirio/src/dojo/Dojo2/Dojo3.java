@@ -15,6 +15,7 @@ public class Dojo3 {
         pokemon.alimentar();
         pokemon.brincar();
         pokemon.alimentar();
+        pokemon.alimentar();
         pokemon.statusAtual();
         pokemon.evoluir("Pikachu", "Evoluído", 90);
         pokemon.statusAtual();
