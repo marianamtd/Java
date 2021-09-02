@@ -15,6 +15,7 @@ Pokemon, e conferindo se tudo funciona conforme esperado.
 </p>
  
  **Ultra Emoji Combat** 😎 🤓🥊
+ 
 UFC dos emojis
 
 - Criação dos lutadores (nome, idade, nacionalidade, peso, altura, vitórias, derrotas, empates)
@@ -28,7 +29,7 @@ UFC dos emojis
 **Sistema de Salão de Beleza** 💇💅
 - Pegar as informações dos clientes (nome, telefone, endereço)
 - Marcar o horário com o profissional escolhido pelo cliente
-- Verificar se o profissional pode está disponível para aquele horário
+- Verificar se o profissional está disponível para aquele horário
 <p align="center">
   <img src="salaodebeleza.gif">
 </p>
