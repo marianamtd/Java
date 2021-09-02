@@ -42,7 +42,7 @@ public class main {
                     System.out.println("Horário (sem espaços)");
                     horario = scanner.nextInt();
                     scanner.nextLine(); //limpar o buffer do teclado
-                    
+
                     System.out.println("Nome do profissional [NS para ver a lista dos profissionais]: ");
                     nomeProf = scanner.nextLine().toUpperCase(Locale.ROOT);
 
