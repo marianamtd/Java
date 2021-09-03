@@ -11,8 +11,6 @@ public class Profissional {
     }
 
     //metodos acessores
-
-
     public String getNomeProf() {
         return nomeProf;
     }
