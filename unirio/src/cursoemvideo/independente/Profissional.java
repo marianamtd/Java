@@ -1,16 +1,27 @@
 package cursoemvideo.independente;
 
 public class Profissional {
-    String nomeProf;
+    String nomeProf, cargo;
     boolean disponivel;
     int horario;
 
     //construtor
-    public Profissional() {
-        setDisponivel(true);
+
+
+    public Profissional(String nomeProf, String cargo) {
+        this.nomeProf = nomeProf;
+        this.cargo = cargo;
     }
 
     //metodos acessores
+
+    public String getCargo() {
+        return cargo;
+    }
+
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
+    }
     public String getNomeProf() {
         return nomeProf;
     }

@@ -93,9 +93,9 @@ public class main {
                     if (nomeProf.equals("NS")) {
                         do {
                             System.out.println("---Lista dos Cabelereiros---");
-                            System.out.println("Fábio Moreira");
-                            System.out.println("Thaís Amaral");
-                            System.out.println("Claúdio Villas");
+                            System.out.println("Fabio Moreira");
+                            System.out.println("Thais Amaral");
+                            System.out.println("Claudio Villas");
                             System.out.println("Bianca Peixoto");
                             System.out.println("Marcela Santos");
                             System.out.println("NS - Não sei");
@@ -137,7 +137,7 @@ public class main {
                             System.out.println("Michele Mendes");
                             System.out.println("Pedro Fernandes");
                             System.out.println("Marcia Abreu");
-                            System.out.println("Luciona Peixoto");
+                            System.out.println("Luciana Peixoto");
                             System.out.println("Renata Santos");
                             System.out.println("NS - Não sei");
 
@@ -192,8 +192,43 @@ public class main {
                     break;
 
                 case 5:
+                    System.out.println("----Área Restrita a Profissionais do Salão----");
                     Profissional[] profissionals = new Profissional[15];
-                    
+                    profissionals[0] = new Profissional("Fabio Moreira", "cabelereiro");
+                    profissionals[1] = new Profissional("Thais Amaral", "cabeleiro");
+                    profissionals[2] = new Profissional("Claudio Villas", "cabeleiro");
+                    profissionals[3] = new Profissional("Bianca Peixoto", "cabeleiro");
+                    profissionals[4] = new Profissional("Marcela Santos", "cabeleiro");
+                    profissionals[5] = new Profissional("Michele Mendes", "manicure");
+                    profissionals[6] = new Profissional("Pedro Fernandes", "manicure");
+                    profissionals[7] = new Profissional("Marcia Abreu", "manicure");
+                    profissionals[8] = new Profissional("Luciana Peixoto", "manicure");
+                    profissionals[9] = new Profissional("Renata Santos", "manicure");
+                    profissionals[10] = new Profissional("Carla Simone", "depilador");
+                    profissionals[11] = new Profissional("Maiara Pereira", "depilador");
+                    profissionals[12] = new Profissional("Victor Roberto", "depilador");
+                    profissionals[13] = new Profissional("Eduarda Rodrigues", "depilador");
+                    profissionals[14] = new Profissional("Brenda Neves", "depilador");
+
+                    System.out.println("Informe seu nome:");
+
+                    nomeProf = scanner.nextLine();
+                    //percorrer o vetor para ver se o nome informado é o msm do sistema
+                    for(int i = 0; i < 15; i++) {
+                        if (profissionals[i].nomeProf.equals(nomeProf)) {
+                            System.out.println("Nome correto!");
+                            System.out.println("Digite a senha: ");
+                            String senha = scanner.nextLine();
+
+                            if (senha.equals("entrar")) {
+                                //chamar metodo para marcar cliente
+                            }
+                        }
+
+                    }
+                    System.out.println("Nome não se encontra no sistema");
+
+
                     break;
 
                 case 6:
