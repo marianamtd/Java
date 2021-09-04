@@ -125,10 +125,10 @@ public class main {
                     System.out.println("Informe agora o horário e o nome do profissional:");
                     System.out.println("Horário (sem espaços)");
                     horario = scanner.nextInt();
-                    scanner.nextLine(); //limpar o buffer do teclado
 
                     System.out.println("Nome do profissional [NS para ver a lista dos profissionais]: ");
                     nomeProf = scanner.nextLine().toUpperCase(Locale.ROOT);
+                    scanner.nextLine(); //limpar o buffer do teclado
 
                     //quando o usuário digitar que NÃO SABE qual profissional tem no salão
                     if (nomeProf.equals("NS")) {
@@ -222,13 +222,10 @@ public class main {
 
                             if (senha.equals("entrar")) {
                                 //chamar metodo para marcar cliente
+                                System.out.println("Caregando...");
                             }
                         }
-
                     }
-                    System.out.println("Nome não se encontra no sistema");
-
-
                     break;
 
                 case 6:
