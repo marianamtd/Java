@@ -1,14 +1,14 @@
 package cursoemvideo.independente;
 
 public class Profissional {
-    String nomeProf, cargo;
-    boolean disponivel;
-    int horario;
+    private String nomeProf, cargo, nomeCliente;
+    private boolean disponivel;
+    private int horario;
 
     public void marcarCliente() {
-        System.out.println("---Marcando Clente---");
+        System.out.println("---Marcando Cliente---");
         System.out.println("Nome do cliente: ");
-        
+
         System.out.println("H");
     }
 
