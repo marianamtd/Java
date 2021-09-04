@@ -5,9 +5,14 @@ public class Profissional {
     boolean disponivel;
     int horario;
 
+    public void marcarCliente() {
+        System.out.println("---Marcando Clente---");
+        System.out.println("Nome do cliente: ");
+        
+        System.out.println("H");
+    }
+
     //construtor
-
-
     public Profissional(String nomeProf, String cargo) {
         this.nomeProf = nomeProf;
         this.cargo = cargo;
