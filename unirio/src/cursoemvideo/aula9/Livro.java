@@ -1,5 +1,7 @@
 package cursoemvideo.aula9;
 
+import java.util.Random;
+
 public class Livro implements Publicacao {
     private String titulo, autor;
     private int totPaginas, pagAtual;
@@ -73,26 +75,32 @@ public class Livro implements Publicacao {
     //implementar os metodos abstratos
     @Override
     public void abrir() {
+        this.setAberto(true);
 
     }
 
     @Override
     public void fechar() {
+        this.setAberto(false);
 
     }
 
     @Override
     public void folhear() {
+        Random random = new Random();
+
 
     }
 
     @Override
-    public void avançarPag() {
+    public void avancarPag() {
+        this.setPagAtual(getPagAtual() + 1);
 
     }
 
     @Override
     public void voltarPag() {
+        this.setPagAtual(getPagAtual() - 1);
 
     }
 }
