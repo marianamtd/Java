@@ -10,7 +10,12 @@ public class Livro implements Publicacao {
 
     //metodos especiais
     public void detalhes() {
-
+        System.out.println("--- Informações sobre o livro ---");
+        System.out.println("Título: " + this.getTitulo());
+        System.out.println("Autor: " + this.getAutor());
+        System.out.println("Total de páginas: " + this.totPaginas);
+        System.out.println("Página atual: " + this.pagAtual);
+        System.out.println();
     }
 
     //metoodos acessores
