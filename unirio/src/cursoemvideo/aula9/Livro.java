@@ -99,7 +99,7 @@ public class Livro implements Publicacao {
     public void folhear(int p) {
         if (p <= getTotPaginas() && p > 0)
             this.pagAtual = p;
-        
+
     }
 
     @Override
