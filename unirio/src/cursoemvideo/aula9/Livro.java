@@ -9,24 +9,27 @@ public class Livro implements Publicacao {
     private Pessoa leitor;
 
     //metodos especiais
-    public void detalhes() {
-        System.out.println("--- Informações sobre o livro ---");
-        System.out.println("Título: " + this.getTitulo());
-        System.out.println("Autor: " + this.getAutor());
-        System.out.println("Total de páginas: " + this.totPaginas);
-        System.out.println("Página atual: " + this.pagAtual);
-        System.out.println();
+
+    public String detalhes() {
+        return "Livro{" +
+                "titulo='" + titulo + '\'' +
+                ", autor='" + autor + '\'' +
+                ", totPaginas=" + totPaginas +
+                ", pagAtual=" + pagAtual +
+                ", aberto=" + aberto +
+                ", leitor=" + leitor +
+                '}';
     }
 
     //metoodos acessores
 
-    public Livro(String titulo, String autor, int totPaginas, int pagAtual, boolean aberto, Pessoa leitor) {
+    public Livro(String titulo, String autor, int totPaginas, Pessoa leitor) {
         this.titulo = titulo;
         this.autor = autor;
         this.totPaginas = totPaginas;
-        this.pagAtual = pagAtual;
-        this.aberto = aberto;
         this.leitor = leitor;
+        this.setAberto(false);
+        this.pagAtual = 0;
     }
 
     public String getTitulo() {
@@ -91,8 +94,8 @@ public class Livro implements Publicacao {
     }
 
     @Override
-    public void folhear() {
-        Random random = new Random();
+    public void folhear(int p) {
+        this.pagAtual = p;
 
 
     }
@@ -100,12 +103,13 @@ public class Livro implements Publicacao {
     @Override
     public void avancarPag() {
         this.setPagAtual(getPagAtual() + 1);
+        //this.pagAtual++;
 
     }
 
     @Override
     public void voltarPag() {
-        this.setPagAtual(getPagAtual() - 1);
+        this.pagAtual--;
 
     }
 }
