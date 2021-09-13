@@ -7,6 +7,7 @@ public class Pessoa {
 
     //metodos especiais
     public void fazerAniversario() {
+        this.idade++;
 
     }
 
