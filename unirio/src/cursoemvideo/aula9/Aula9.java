@@ -6,6 +6,11 @@ public class Aula9 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        //criar dois vetores
+        Pessoa[] p = new Pessoa[3];
+        Livro[] livros = new Livro[3];
+        
+
 
     }
 }
