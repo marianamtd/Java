@@ -214,18 +214,18 @@ public class main {
 
                     nomeProf = scanner.nextLine();
                     //percorrer o vetor para ver se o nome informado é o msm do sistema
-                    for(int i = 0; i < 15; i++) {
-                        if (profissionals[i].nomeProf.equals(nomeProf)) {
-                            System.out.println("Nome correto!");
-                            System.out.println("Digite a senha: ");
-                            String senha = scanner.nextLine();
-
-                            if (senha.equals("entrar")) {
-                                //chamar metodo para marcar cliente
-                                System.out.println("Caregando...");
-                            }
-                        }
-                    }
+//                    for(int i = 0; i < 15; i++) {
+//                        if (profissionals[i].nomeProf.equals(nomeProf)) {
+//                            System.out.println("Nome correto!");
+//                            System.out.println("Digite a senha: ");
+//                            String senha = scanner.nextLine();
+//
+//                            if (senha.equals("entrar")) {
+//                                //chamar metodo para marcar cliente
+//                                System.out.println("Caregando...");
+//                            }
+//                        }
+//                    }
                     break;
 
                 case 6:
