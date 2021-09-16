@@ -19,8 +19,10 @@ public class Main {
         System.out.println(p2.toString());
         System.out.println(p2.getCurso());
 
+        p3.setSalario(1000f);
+        p3.receberAum(550.3f);
+        p2.cancelarMatri();
 
-        p3.toString();
 
 
     }
