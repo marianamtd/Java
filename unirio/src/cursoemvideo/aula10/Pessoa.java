@@ -13,10 +13,10 @@ public class Pessoa {
     @Override
     public String toString() {
         return "Pessoa {" +
-                "\nnome='" + nome + '\'' +
-                ",\nsexo=" + sexo +
-                ",\nidade=" + idade +
-                ' }';
+                "\nnome = '" + nome + '\'' +
+                ",\nsexo = " + sexo +
+                ",\nidade = " + idade +
+                '}';
     }
 
     //metodos acessores
