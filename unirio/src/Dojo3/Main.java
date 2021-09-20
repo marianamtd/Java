@@ -166,9 +166,9 @@ public class Main {
                                 }
                             }
                             for (Conta c: contas){
-                                if (c instanceof ContaCorrente cc){
-                                    cc.setSaldoCC(cc.getSaldo() - transfC);
-                                    System.out.printf("saldo atual: R$%.2f\n",cc.getSaldoCC());
+                                if (c instanceof ContaPoupanca cp){
+                                    cp.setSaldoCP(cp.getSaldo() - transfC);
+                                    System.out.printf("saldo atual: R$%.2f\n",cp.getSaldoCP());
                                 }
 
 
@@ -290,8 +290,24 @@ public class Main {
                             }
                         }
                         if (lerNr == 4) {
-                            System.out.println("Fazer!!");
 
+                            System.out.println("Quanto será transferido?");
+                            int transfC = scanner.nextInt();
+
+                            for (Conta c: contas){
+                                if (c instanceof ContaPoupanca cp) {
+                                    cp.setSaldoCP(cp.getSaldo() - transfC);
+                                    System.out.printf("saldo atual: R$%.2f\n", cp.getSaldoCP());
+                                }
+                            }
+                            for (Conta c: contas){
+                                if (c instanceof ContaCorrente cc){
+                                    cc.setSaldoCC(cc.getSaldo() - transfC);
+                                    System.out.printf("saldo atual: R$%.2f\n",cc.getSaldoCC());
+                                }
+
+
+                            }
                         }
                         if (lerNr == 5) {
                             for (Conta c: contas){
