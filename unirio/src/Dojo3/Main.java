@@ -1,5 +1,4 @@
-package dojo.dojo3;
-
+package Dojo3;
 import java.util.Calendar;
 import java.util.Scanner;
 import java.util.Random;
