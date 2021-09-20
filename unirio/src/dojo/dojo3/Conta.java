@@ -1,21 +1,27 @@
 package dojo.dojo3;
 
+import java.util.Calendar;
+
 import java.util.Random;
+
 import java.util.Date;
+
 import java.util.Scanner;
 
 public abstract class Conta{
     protected String nome, email;
-    protected  int data_nasc,senha, telefone;
+    protected  int diaNasc, mesNasc, anoNasc, senha, telefone;
     protected long cpf;
     protected float saldo;
-    protected boolean entrar = false;
+    protected boolean entrar;
     Scanner scan = new Scanner(System.in);
 
-    public Conta(String nome, String email, int data_nasc, int senha, int telefone, long cpf,boolean entrar) {
+    public Conta(String nome, String email, int diaNasc, int mesNasc, int anoNasc, int senha, int telefone, long cpf,boolean entrar) {
         this.nome = nome;
         this.email = email;
-        this.data_nasc = data_nasc;
+        this.diaNasc = diaNasc;
+        this.mesNasc = mesNasc;
+        this.anoNasc = anoNasc;
         this.senha = senha;
         this.telefone = telefone;
         this.cpf = cpf;
@@ -26,62 +32,59 @@ public abstract class Conta{
 
     }
 
-    public void pagarBoleto() {
-        java.util.Date d = new Date();
-        System.out.println("Código de barras: ");
-        long cod_barras = scan.nextLong();
-        System.out.println("Valor do boleto: ");
-        float valor = scan.nextFloat();
-        System.out.println("Data de vencimento:");
-        int data = scan.nextInt();
-
-        //depois colocar o negócio da data (+ multa)
-
-    }
-
-    public void deposito() {
-        System.out.println("Qual será o valor que será depositado na conta?");
-        float dep = scan.nextFloat();
-        this.setSaldo(getSaldo() + dep);
-        System.out.println("O saldo atual da sua conta é " + this.getSaldo());
-    }
-
-    public void saque(){
-        System.out.println("Qual sera o valor a ser sacado?");
-        float saque = scan.nextFloat();
-
-        if (this.getSaldo() > 0) {
-            this.setSaldo(getSaldo() - saque);
-            System.out.println("O saldo atual da sua conta é de R$" + this.getSaldo());
-            System.out.println();
+    public static void imprimir(Conta[] contas){
+        for (Conta c: contas){
+            if (c != null)
+                System.out.println(c.informacoes());
         }
-        else {
-            System.out.println("Saque negado");
-            System.out.println("Saldo negativo!");
-            System.out.println("Saldo: R$" + this.getSaldo());
-        }
-
+    }
+    public String informacoes(){
+        return String.format("Nome: %s", nome);
     }
 
-    public void contaSalario() {
-
-       if(this.getEntrar() == false ) {
-
+    public void ContaSalario() {
         System.out.println("Salário:");
-       float salario = scan.nextFloat();
-       System.out.println("Data de pagamento:");
-       int data = scan.nextInt();
-       this.entrar= true;
-       }
-       else {
-           System.out.println("Voce ja possui conta salario! ");
-       }
+        float salario = scan.nextFloat();
+        System.out.println("Data de pagamento:\n");
+        System.out.println("Dia:");
+        int dia = scan.nextInt();
+        System.out.println("Mes:");
+        int mes = scan.nextInt();
+        System.out.println("Ano:");
+        int ano = scan.nextInt();
 
+        System.out.println("Conta salário criada com sucesso!\n");
     }
-
-    //protected abstract boolean entrar();
 
     //metodos acessores
+    public int getDiaNasc() {
+        return diaNasc;
+    }
+
+    public void setDiaNasc(int diaNasc) {
+        this.diaNasc = diaNasc;
+    }
+
+    public int getMesNasc() {
+        return mesNasc;
+    }
+
+    public void setMesNasc(int mesNasc) {
+        this.mesNasc = mesNasc;
+    }
+
+    public int getAnoNasc() {
+        return anoNasc;
+    }
+
+    public void setAnoNasc(int anoNasc) {
+        this.anoNasc = anoNasc;
+    }
+
+    public boolean isEntrar() {
+        return entrar;
+    }
+
     public String getNome() {
         return nome;
     }
@@ -100,10 +103,6 @@ public abstract class Conta{
 
     public int getTelefone() {
         return telefone;
-    }
-
-    public int getData_nasc() {
-        return data_nasc;
     }
 
     public void setNome(String nome) {
@@ -126,10 +125,6 @@ public abstract class Conta{
         this.telefone = telefone;
     }
 
-    public void setData_nasc(int data_nasc) {
-        this.data_nasc = data_nasc;
-    }
-
     public float getSaldo() {
         return saldo;
     }
@@ -147,5 +142,6 @@ public abstract class Conta{
     }
 
 }
+
 
 
