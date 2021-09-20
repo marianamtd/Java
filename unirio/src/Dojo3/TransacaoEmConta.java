@@ -6,4 +6,5 @@ public interface TransacaoEmConta {
     public abstract void getDescricao ();
     public abstract void getTipoOperacao();
     public abstract void getData();
+
 }
