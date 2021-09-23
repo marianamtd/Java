@@ -34,7 +34,7 @@ UFC dos emojis
   <img src="salaodebeleza.gif">
 </p>
 
-**Sistema de Banco**
+**Sistema de Banco**🏦💰💸
 - Deve ser possível abrir uma conta corrente ou poupança. As informações para abertura são nome, CPF, data de
 nascimento, e-mail, telefone e senha
 - O sistema deve permitir fazer depósitos e saques em contas
