@@ -167,7 +167,7 @@ public class Main {
                             }
                             for (Conta c: contas){
                                 if (c instanceof ContaPoupanca cp){
-                                    cp.setSaldoCP(cp.getSaldo() - transfC);
+                                    cp.setSaldoCP(cp.getSaldo() + transfC);
                                     System.out.printf("saldo atual: R$%.2f\n",cp.getSaldoCP());
                                 }
 
@@ -302,7 +302,7 @@ public class Main {
                             }
                             for (Conta c: contas){
                                 if (c instanceof ContaCorrente cc){
-                                    cc.setSaldoCC(cc.getSaldo() - transfC);
+                                    cc.setSaldoCC(cc.getSaldo() + transfC);
                                     System.out.printf("saldo atual: R$%.2f\n",cc.getSaldoCC());
                                 }
 
