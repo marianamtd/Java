@@ -15,6 +15,9 @@ public class Aula12 {
         mamifero.emitirSom();
         mamifero.alimentar();
 
+        peixe.soltarBolha();
+        ave.fazerNinho();
+
 
     }
 }
