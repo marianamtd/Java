@@ -5,7 +5,7 @@ public class Ave extends Animal{
 
     public void fazerNinho() {
         System.out.println("Fazendo ninho...");
-        System.out.println("'\\'_//");
+        System.out.println("\\\\_//");
     }
 
     @Override
