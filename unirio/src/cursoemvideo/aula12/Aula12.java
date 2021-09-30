@@ -18,6 +18,15 @@ public class Aula12 {
         peixe.soltarBolha();
         ave.fazerNinho();
 
+        Canguru canguru = new Canguru();
+        Tartaruga tartaruga = new Tartaruga();
+        Goldfish goldfish = new Goldfish();
+        Arara arara = new Arara();
+        Cachorro cachorro = new Cachorro();
+        Cobra cobra = new Cobra();
+
+        canguru.locomover();
+
 
     }
 }
