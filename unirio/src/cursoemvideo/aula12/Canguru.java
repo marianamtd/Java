@@ -1,8 +1,8 @@
 package cursoemvideo.aula12;
 
-public class Canjuru extends Mamifero{
+public class Canguru extends Mamifero{
     @Override
     public void locomover() {
-        super.locomover();
+        System.out.println("Saltando");
     }
 }
