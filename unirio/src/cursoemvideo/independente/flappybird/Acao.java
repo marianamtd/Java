@@ -1,4 +1,5 @@
 package cursoemvideo.independente.flappybird;
 
-public class Acao {
+public interface Acao {
+    void executa();
 }

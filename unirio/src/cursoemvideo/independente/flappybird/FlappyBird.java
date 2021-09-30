@@ -32,7 +32,7 @@ public class FlappyBird implements Jogo{
 
     @Override
     public void desenhar(Tela tela) {
-
+//        tela.imagem("flappybird-background.jpg", 0, 0, 88, 100, dir, x, y);
     }
 
     private static void roda() {
