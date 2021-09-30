@@ -26,6 +26,9 @@ public class Aula12 {
         Cobra cobra = new Cobra();
 
         canguru.locomover();
+        cachorro.locomover();
+        cachorro.emitirSom();
+        canguru.emitirSom();
 
 
     }
