@@ -1,11 +1,13 @@
 package ED1.ex.loianegronercurso;
 
-public class Lista {
-    private Object[] elementos;
+import java.lang.reflect.Array;
+
+public class Lista<T>{
+    private T[] elementos;
     private int tamanho;
 
-    public VetorObject(int capacidade) {
-        this.elementos = new Object[capacidade];
+    public Lista(int capacidade) {
+        this.elementos = (T[]) new Object[capacidade];
         this.tamanho = 0;
     }
 
@@ -34,7 +36,7 @@ public class Lista {
     //privado pq só é utilizado internamente
     private void aumentaCapacidade(){
         if(this.tamanho == this.elementos.length){
-            Object[] elementosNovos = new Object[this.elementos.length * 2]; //instanciando o novo vetor
+            T[] elementosNovos = (T[])new Object[this.elementos.length * 2]; //instanciando o novo vetor
             for (int i = 0; i < this.elementos.length; i++){
                 elementosNovos[i] = this.elementos[i];
             }
@@ -42,7 +44,7 @@ public class Lista {
         }
     }
 
-    public boolean adiciona(Object elemento) {
+    public boolean adiciona(T elemento) {
         this.aumentaCapacidade();
         if (this.tamanho < this.elementos.length) {
             this.elementos[this.tamanho] = elemento;
@@ -52,7 +54,7 @@ public class Lista {
         return false;
     }
 
-    public boolean adiciona(int posicao, Object elemento) {
+    public boolean adiciona(int posicao, T elemento) {
         //excepetion para verificar o elemento
         if(!(posicao >= 0 && posicao < tamanho)){
             throw new IllegalArgumentException("Posição inválida!");
@@ -95,7 +97,11 @@ public class Lista {
         return this.elementos[posicao];
     }
 
-    public int busca(Object elemento) {
+    public boolean contem(T elemento){
+        return busca(elemento) > -1; //>= 0
+    }
+
+    public int busca(T elemento) {
         for (int i = 0; i < this.tamanho; i++) {
             if (this.elementos[i].equals(elemento)) {
                 return i;
