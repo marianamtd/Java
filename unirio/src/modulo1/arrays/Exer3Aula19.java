@@ -7,7 +7,7 @@ public class Exer3Aula19 {
         Scanner scanner = new Scanner(System.in);
 
         int[] vetorA = new int[5];
-        int[] vetorB = new int[5];
+        int[] vetorB = new int[vetorA.length];
 
         for(int i = 0; i < vetorA.length; i++){
             vetorA[i] = scanner.nextInt();
